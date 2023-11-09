@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home"><img src="—Pngtree—elegant sprout on a and_3554505.png" alt="logo"></a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Product</a>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>POPUP LOGIN</h1>
+        <a href="#" class="button" id="button">Login</a>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <i class="fa-sharp fa-solid fa-circle-xmark" style="color: #000000;" id="close"></i>
+            <img src="diamond (1).png" alt="logo2" class="logo2">
+            <input type="text" placeholder="E-mail Address">
+            <select name="genderbox" id="genderbox">
+                <option value="Gender" selected disabled>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+             </select>
+            <input type="text" placeholder="Date of birth    dd/mm/yy">
+        </div>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+        document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/e54fb3240b.js" crossorigin="anonymous"></script>
+</body>
+</html>
